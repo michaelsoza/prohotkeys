@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>PH basic implementation for MAC</name>
+    <identifier>private.allow_esc_with_arrow_keys</identifier>
+    <autogen>__KeyToKey__ KeyCode::E , ModifierFlag::COMMAND_R, KeyCode::CURSOR_UP | ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::S , ModifierFlag::COMMAND_R, KeyCode::CURSOR_LEFT | ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::D , ModifierFlag::COMMAND_R, KeyCode::CURSOR_DOWN | ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::F , ModifierFlag::COMMAND_R, KeyCode::CURSOR_RIGHT | ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::W , ModifierFlag::COMMAND_R, KeyCode::CURSOR_LEFT | ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::R , ModifierFlag::COMMAND_R, KeyCode::CURSOR_RIGHT | ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::X , ModifierFlag::COMMAND_R, KeyCode::CURSOR_LEFT | ModifierFlag::OPTION_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::V , ModifierFlag::COMMAND_R, KeyCode::CURSOR_RIGHT | ModifierFlag::OPTION_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::V , ModifierFlag::OPTION_R, KeyCode::FORWARD_DELETE | ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::C , ModifierFlag::OPTION_R, KeyCode::DELETE | ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::T , ModifierFlag::COMMAND_R, KeyCode::DELETE</autogen>
+    <autogen>__KeyToKey__ KeyCode::Z , ModifierFlag::OPTION_R, KeyCode::DELETE | ModifierFlag::OPTION_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::X , ModifierFlag::OPTION_R, KeyCode::FORWARD_DELETE | ModifierFlag::OPTION_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::V , ModifierFlag::OPTION_R, KeyCode::DELETE | ModifierFlag::OPTION_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::G , ModifierFlag::COMMAND_R, KeyCode::RETURN </autogen>
+    <autogen>__KeyToKey__ KeyCode::B , ModifierFlag::COMMAND_R, KeyCode::ESCAPE </autogen>
+    <autogen>__KeyToKey__ KeyCode::E , ModifierFlag::OPTION_R, KeyCode::RawValue::0x21</autogen>
+    <autogen>__KeyToKey__ KeyCode::R , ModifierFlag::OPTION_R, KeyCode::RawValue::0x1e</autogen>
+    <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::OPTION_R, KeyCode::RawValue::0x19 | ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::F , ModifierFlag::OPTION_R, KeyCode::RawValue::0x1d | ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::A , ModifierFlag::OPTION_R, KeyCode::RawValue::0x21 | ModifierFlag::SHIFT_L </autogen>
+    <autogen>__KeyToKey__ KeyCode::S , ModifierFlag::OPTION_R, KeyCode::RawValue::0x1e | ModifierFlag::SHIFT_L </autogen>
+    <autogen>__KeyToKey__ KeyCode::Q , ModifierFlag::OPTION_R, KeyCode::RawValue::0x2b | ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::W , ModifierFlag::OPTION_R, KeyCode::RawValue::0x2f | ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::1 , ModifierFlag::OPTION_R, KeyCode::RawValue::0x1b </autogen>
+    <autogen>__KeyToKey__ KeyCode::2 , ModifierFlag::OPTION_R, KeyCode::RawValue::0x1b | ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::3 , ModifierFlag::OPTION_R, KeyCode::RawValue::0x18 </autogen>
+    <autogen>__KeyToKey__ KeyCode::4 , ModifierFlag::OPTION_R, KeyCode::RawValue::0x18 | ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::1 , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x32 </autogen>
+    <autogen>__KeyToKey__ KeyCode::2 , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x32 | ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::3 , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x2a </autogen>
+    <autogen>__KeyToKey__ KeyCode::4 , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x2a | ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::A , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x27 </autogen>
+    <autogen>__KeyToKey__ KeyCode::Z , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x27 | ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::Q , ModifierFlag::COMMAND_R, KeyCode::CAPSLOCK</autogen>
+  </item>
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_toggleprofile_alternative</name>
+    <url type="shell">
+      <![CDATA[    if test "$(/Applications/Karabiner.app/Contents/Library/bin/karabiner selected)" == "0"; then /Applications/Karabiner.app/Contents/Library/bin/karabiner select 1; /usr/local/bin/terminal-notifier -title "Karabiner" -group "Karabiner" -message "Alternative mode"; else /Applications/Karabiner.app/Contents/Library/bin/karabiner select 0; /usr/local/bin/terminal-notifier -title "Karabiner" -group "Karabiner" -message "Normal mode"; fi    ]]>
+    </url>
+  </vkopenurldef>
+  <item>
+    <name>Toggle PH with F6</name>
+    <identifier>private.switch1</identifier>
+    <autogen>
+      __HoldingKeyToKey__ KeyCode::F6, KeyCode::F6, KeyCode::VK_NONE, KeyCode::VK_OPEN_URL_SHELL_toggleprofile_alternative, Option::NOREPEAT, ThresholdMillisecond::RawValue::400
+    </autogen>
+  </item>
+</root>
