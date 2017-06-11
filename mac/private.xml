@@ -12,7 +12,7 @@
     <autogen>__KeyToKey__ KeyCode::X , ModifierFlag::COMMAND_R, KeyCode::CURSOR_LEFT | ModifierFlag::OPTION_L</autogen>
     <autogen>__KeyToKey__ KeyCode::V , ModifierFlag::COMMAND_R, KeyCode::CURSOR_RIGHT | ModifierFlag::OPTION_L</autogen>
     <autogen>__KeyToKey__ KeyCode::G , ModifierFlag::COMMAND_R, KeyCode::RETURN </autogen>
-    <autogen>__KeyToKey__ KeyCode::T , ModifierFlag::COMMAND_R, KeyCode::ESCAPE </autogen>
+    <autogen>__KeyToKey__ KeyCode::Q , VK_COMMAND, KeyCode::ESCAPE </autogen>
 	<!-- Brackets and other character to use on the right side of the distribution -->
     <autogen>__KeyToKey__ KeyCode::O , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x21</autogen>
     <autogen>__KeyToKey__ KeyCode::P , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x1e</autogen>
@@ -40,8 +40,13 @@
     <autogen>__KeyToKey__ KeyCode::B , ModifierFlag::COMMAND_R, KeyCode::DELETE | ModifierFlag::OPTION_L</autogen>
     <autogen>__KeyToKey__ KeyCode::C , ModifierFlag::COMMAND_R, KeyCode::FORWARD_DELETE </autogen>
     <autogen>__KeyToKey__ KeyCode::N , ModifierFlag::COMMAND_R, KeyCode::FORWARD_DELETE | ModifierFlag::OPTION_L</autogen>
-    <autogen>__KeyToKey__ KeyCode::E , ModifierFlag::OPTION_R, KeyCode::PAGEUP </autogen>
-    <autogen>__KeyToKey__ KeyCode::D , ModifierFlag::OPTION_R, KeyCode::PAGEDOWN</autogen>
+    <autogen>__KeyToKey__ KeyCode::Y , ModifierFlag::COMMAND_R, KeyCode::PAGEUP </autogen>
+    <autogen>__KeyToKey__ KeyCode::T , ModifierFlag::COMMAND_R, KeyCode::PAGEDOWN</autogen>
+	<!-- From standars -->
+		<autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::SHIFT_L, KeyCode::COMMAND_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::SHIFT_R, KeyCode::COMMAND_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::UK_SECTION, KeyCode::BACKQUOTE</autogen>
   </item>
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_SHELL_toggleprofile_alternative</name>
