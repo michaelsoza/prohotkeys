@@ -36,6 +36,8 @@ AppsKey & SC035:: UnderScore()
 AppsKey & b:: DeleteLeftWord()
 AppsKey & n:: DeleteRightWord()
 AppsKey & g:: NewLine()
+AppsKey & t:: Send {Blind}{PgDn}
+AppsKey & y:: Send {Blind}{PgUp}
 AppsKey & F6:: Suspend
 return
 ;------------------------------------
