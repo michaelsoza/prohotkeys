@@ -23,7 +23,9 @@
     <autogen>__KeyToKey__ KeyCode::U , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x2b | ModifierFlag::SHIFT_L</autogen>
     <autogen>__KeyToKey__ KeyCode::I , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x2f | ModifierFlag::SHIFT_L</autogen>
     <autogen>__KeyToKey__ KeyCode::7 , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x1b </autogen>
+    <autogen>__KeyToKey__ KeyCode::DOT , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x1b </autogen>
     <autogen>__KeyToKey__ KeyCode::8 , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x1b | ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::SLASH , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x1b | ModifierFlag::SHIFT_L</autogen>
     <autogen>__KeyToKey__ KeyCode::9 , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x18 </autogen>
     <autogen>__KeyToKey__ KeyCode::0 , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x18 | ModifierFlag::SHIFT_L</autogen>
     <autogen>__KeyToKey__ KeyCode::1 , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x32 </autogen>
@@ -36,8 +38,10 @@
 	<!-- Elimination of characters and words -->
     <autogen>__KeyToKey__ KeyCode::A , ModifierFlag::COMMAND_R, KeyCode::DELETE </autogen>
     <autogen>__KeyToKey__ KeyCode::B , ModifierFlag::COMMAND_R, KeyCode::DELETE | ModifierFlag::OPTION_L</autogen>
-    <autogen>__KeyToKey__ KeyCode::Q , ModifierFlag::COMMAND_R, KeyCode::FORWARD_DELETE </autogen>
+    <autogen>__KeyToKey__ KeyCode::C , ModifierFlag::COMMAND_R, KeyCode::FORWARD_DELETE </autogen>
     <autogen>__KeyToKey__ KeyCode::N , ModifierFlag::COMMAND_R, KeyCode::FORWARD_DELETE | ModifierFlag::OPTION_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::E , ModifierFlag::OPTION_R, KeyCode::PAGEUP </autogen>
+    <autogen>__KeyToKey__ KeyCode::D , ModifierFlag::OPTION_R, KeyCode::PAGEDOWN</autogen>
   </item>
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_SHELL_toggleprofile_alternative</name>
