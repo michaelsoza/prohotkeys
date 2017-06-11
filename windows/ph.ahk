@@ -36,6 +36,7 @@ AppsKey & SC035:: UnderScore()
 AppsKey & b:: DeleteLeftWord()
 AppsKey & n:: DeleteRightWord()
 AppsKey & g:: NewLine()
+AppsKey & F6:: Suspend
 return
 ;------------------------------------
 ;Single Brackets
@@ -262,10 +263,10 @@ CodeEndLine:
 SendInput, {End};
 Return
 
-RAlt & Space::
-Suspend, permit
-Suspend, toggle
-return
+Toggle(){
+  Suspend, permit
+  Suspend, toggle
+}
 
 Autocomplete:
 SendInput ^{Space}
