@@ -1,8 +1,10 @@
 <?xml version="1.0"?>
 <root>
+	<modifierdef>MY_HYPER</modifierdef>
   <item>
     <name>PH basic implementation for MAC</name>
-    <identifier>private.allow_esc_with_arrow_keys</identifier>
+		<identifier>private.allow_esc_with_arrow_keys</identifier>
+		<autogen>__KeyToKey__ KeyCode::PC_PRINTSCREEN, KeyCode::VK_MODIFIER_MY_HYPER</autogen>
     <autogen>__KeyToKey__ KeyCode::E , ModifierFlag::COMMAND_R, KeyCode::CURSOR_UP | ModifierFlag::NONE</autogen>
     <autogen>__KeyToKey__ KeyCode::S , ModifierFlag::COMMAND_R, KeyCode::CURSOR_LEFT | ModifierFlag::NONE</autogen>
     <autogen>__KeyToKey__ KeyCode::D , ModifierFlag::COMMAND_R, KeyCode::CURSOR_DOWN | ModifierFlag::NONE</autogen>
@@ -23,17 +25,7 @@
     <autogen>__KeyToKey__ KeyCode::U , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x2b | ModifierFlag::SHIFT_L</autogen>
     <autogen>__KeyToKey__ KeyCode::I , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x2f | ModifierFlag::SHIFT_L</autogen>
     <autogen>__KeyToKey__ KeyCode::7 , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x1b </autogen>
-    <autogen>__KeyToKey__ KeyCode::DOT , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x1b </autogen>
     <autogen>__KeyToKey__ KeyCode::8 , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x1b | ModifierFlag::SHIFT_L</autogen>
-    <autogen>__KeyToKey__ KeyCode::SLASH , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x1b | ModifierFlag::SHIFT_L</autogen>
-    <autogen>__KeyToKey__ KeyCode::9 , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x18 </autogen>
-    <autogen>__KeyToKey__ KeyCode::0 , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x18 | ModifierFlag::SHIFT_L</autogen>
-    <autogen>__KeyToKey__ KeyCode::1 , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x32 </autogen>
-    <autogen>__KeyToKey__ KeyCode::2 , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x32 | ModifierFlag::SHIFT_L</autogen>
-    <autogen>__KeyToKey__ KeyCode::3 , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x2a </autogen>
-    <autogen>__KeyToKey__ KeyCode::4 , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x2a | ModifierFlag::SHIFT_L</autogen>
-    <autogen>__KeyToKey__ KeyCode::COMMA , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x27 </autogen>
-    <autogen>__KeyToKey__ KeyCode::M , ModifierFlag::COMMAND_R, KeyCode::RawValue::0x27 | ModifierFlag::SHIFT_L</autogen>
     <autogen>__KeyToKey__ KeyCode::Z , ModifierFlag::COMMAND_R, KeyCode::CAPSLOCK</autogen>
 	<!-- Elimination of characters and words -->
     <autogen>__KeyToKey__ KeyCode::A , ModifierFlag::COMMAND_R, KeyCode::DELETE </autogen>
@@ -47,7 +39,53 @@
 		<autogen>__KeyToKey__ KeyCode::SHIFT_L, KeyCode::COMMAND_L</autogen>
 		<autogen>__KeyToKey__ KeyCode::SHIFT_R, KeyCode::COMMAND_L</autogen>
 		<autogen>__KeyToKey__ KeyCode::UK_SECTION, KeyCode::BACKQUOTE</autogen>
-  </item>
+
+		<autogen>__KeyToKey__ KeyCode::SEMICOLON , ModifierFlag::MY_HYPER, KeyCode::RawValue::0x1b | ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::L , ModifierFlag::MY_HYPER, KeyCode::RawValue::0x1b </autogen>
+    <autogen>__KeyToKey__ KeyCode::K , ModifierFlag::MY_HYPER, KeyCode::RawValue::0x27 </autogen>
+    <autogen>__KeyToKey__ KeyCode::J , ModifierFlag::MY_HYPER, KeyCode::RawValue::0x27 | ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::A , ModifierFlag::MY_HYPER, KeyCode::RawValue::0x32 </autogen>
+    <autogen>__KeyToKey__ KeyCode::S , ModifierFlag::MY_HYPER, KeyCode::RawValue::0x32 | ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::D , ModifierFlag::MY_HYPER, KeyCode::RawValue::0x2a </autogen>
+    <autogen>__KeyToKey__ KeyCode::F , ModifierFlag::MY_HYPER, KeyCode::RawValue::0x2a | ModifierFlag::SHIFT_L</autogen>
+		
+		<autogen>__KeyToKey__ KeyCode::Z , ModifierFlag::MY_HYPER, KeyCode::RawValue::0x12 | ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::X , ModifierFlag::MY_HYPER, KeyCode::RawValue::0x13 | ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::C , ModifierFlag::MY_HYPER, KeyCode::RawValue::0x14 | ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::V , ModifierFlag::MY_HYPER, KeyCode::RawValue::0x15 | ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::B , ModifierFlag::MY_HYPER, KeyCode::RawValue::0x17 | ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::MY_HYPER, KeyCode::RawValue::0x16 | ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::M , ModifierFlag::MY_HYPER, KeyCode::RawValue::0x1a | ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::COMMA , ModifierFlag::MY_HYPER, KeyCode::RawValue::0x1c | ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::DOT, ModifierFlag::MY_HYPER, KeyCode::RawValue::0x18 | ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::SLASH, ModifierFlag::MY_HYPER, KeyCode::RawValue::0x18 </autogen>
+
+		<!-- Numbers -->
+		<autogen>__KeyToKey__ KeyCode::Q , ModifierFlag::MY_HYPER, KeyCode::1</autogen>
+		<autogen>__KeyToKey__ KeyCode::W , ModifierFlag::MY_HYPER, KeyCode::2</autogen>
+		<autogen>__KeyToKey__ KeyCode::E , ModifierFlag::MY_HYPER, KeyCode::3</autogen>
+		<autogen>__KeyToKey__ KeyCode::R , ModifierFlag::MY_HYPER, KeyCode::4</autogen>
+		<autogen>__KeyToKey__ KeyCode::T , ModifierFlag::MY_HYPER, KeyCode::5</autogen>
+		<autogen>__KeyToKey__ KeyCode::Y , ModifierFlag::MY_HYPER, KeyCode::6</autogen>
+		<autogen>__KeyToKey__ KeyCode::U , ModifierFlag::MY_HYPER, KeyCode::7</autogen>
+		<autogen>__KeyToKey__ KeyCode::I , ModifierFlag::MY_HYPER, KeyCode::8</autogen>
+		<autogen>__KeyToKey__ KeyCode::O , ModifierFlag::MY_HYPER, KeyCode::9</autogen>
+		<autogen>__KeyToKey__ KeyCode::P , ModifierFlag::MY_HYPER, KeyCode::0</autogen>
+		<autogen>
+			__KeyOverlaidModifier__
+			KeyCode::SPACE,
+
+			KeyCode::VK_MODIFIER_MY_HYPER, ModifierFlag::SANDS2,
+
+			KeyCode::SPACE,
+		</autogen>
+
+		<block>
+			<modifier_only>ModifierFlag::SANDS2</modifier_only>
+			<autogen>__BlockUntilKeyUp__ KeyCode::SPACE</autogen>
+		</block>
+
+	</item>
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_SHELL_toggleprofile_alternative</name>
     <url type="shell">
