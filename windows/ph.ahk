@@ -39,6 +39,38 @@ AppsKey & g:: NewLine()
 AppsKey & t:: Send {Blind}{PgDn}
 AppsKey & y:: Send {Blind}{PgUp}
 AppsKey & F6:: Suspend
+Space & a::BackTick()
+Space & s::Tilde()
+Space & d::BackSlash()
+Space & f::Pipe()
+Space & j::DoubleQuote()
+Space & k::SingleQuote()
+Space & l::Hyphen()
+Space & SC027::UnderScore()
+Space::Mirror()
+
+Space & z::CloseExclamation()
+Space & x::At()
+Space & c::Sharp()
+Space & v::Dollar()
+Space & b::Percent()
+Space & n::Pow()
+Space & m::Ampersand()
+Space & SC033::Multiply()
+Space & SC034::Plus()
+Space & SC035::Equal()
+
+Space & q:: Send 1
+Space & w:: Send 2
+Space & e:: Send 3
+Space & r:: Send 4
+Space & t:: Send 5
+Space & y:: Send 6
+Space & u:: Send 7
+Space & i:: Send 8
+Space & o:: Send 9
+Space & p:: Send 0
+
 return
 ;------------------------------------
 ;Single Brackets
@@ -197,35 +229,33 @@ return
 Pipe(){
   SendInput {U+007C}
 }
-
-Return
-Percent:
+Percent(){
 SendInput {U+0025}
-Return
+}
 CloseInterrogation:
 SendInput {U+003F}
 return
-At:
+At(){
 SendInput {U+0040}
-Return
-Dollar:
+}
+Dollar(){
 SendInput {U+0024}
-return
+}
 UnderScore(){
   SendInput {U+005F}
 }
 Hyphen(){
   SendInput {U+002D}
 }
-Ampersand:
+Ampersand(){
 SendInput {U+0026}
-Return
-CloseExclamation:
+}
+CloseExclamation(){
 SendInput {U+0021}
-Return
-Sharp:
+}
+Sharp(){
 SendInput {U+0023}
-Return
+}
 OpenInterrogation:
 SendInput {U+00BF}
 Return
@@ -235,14 +265,23 @@ Return
 Colon:
 SendInput {U+003A}
 Return
-Equal(){
-  SendInput {U+003D}
-}
 Tilde(){
   SendInput {U+007E}
 }
+Pow(){
+  SendInput {U+005E}
+  
+}
+Multiply(){
+  SendInput {U+2217}
+}
+Equal(){
+  SendInput {U+003D}
+}
+Plus(){
+  SendInput {U+002B}
+}
 
-return
 Tilde2:
 SendInput {U+00B4}
 return
@@ -282,11 +321,10 @@ WindowMenu:
 SendInput !{Space}
 return
 
-Mirror:
+Mirror(){
 pressedHotkey := A_ThisHotkey
 SendInput, {%pressedHotkey%}
-return
-
+}
 LCtrl & .::
 SendInput ^.
 Return
